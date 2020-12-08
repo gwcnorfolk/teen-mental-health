@@ -13,9 +13,13 @@ That's this file.
 
 Home page content. 
 
+### ← checklist.css
+
+Style content that appears as an interactive checklist. 
+
 ### ← style.css
 
-CSS files add styling rules.
+CSS files add styling rules and background images.
 
 ### ← script.js
 

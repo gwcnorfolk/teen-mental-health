@@ -104,7 +104,7 @@ li.nav a {
 
 li.nav a:hover {
   /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
-  background-color: #000000;
+  background-color: #00000060;
   color: #000000;
 }
 
@@ -135,7 +135,7 @@ li.nav a:hover {
 }
 
 /* TODO: Review the CSS properties to the flex item for the heading (the left box) */
-.heading-home {
+.heading {
   padding: 2%;
   color: #43d6b9ff;
   font-size: 50px;
@@ -198,16 +198,6 @@ li.nav a:hover {
   }
 }
 
-@media mediatype and (media feature) {
-/* CSS rule sets */
-}
-
-
-
-
-
-
-
 
 .main-message,
 .image-one {
@@ -222,19 +212,44 @@ li.nav a:hover {
 background-attachment: fixed;  
 }
 
-/* TODO: Replace the current image URL with your own. This is the top image on your. */
-.home-main-message {
-  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fnature-988484_1280.jpg?v=1605020300390");
+/* TODO: Replace the current image URL with your own. This is the first image on your page. */
+.home .main-message {
+  background-image: url("");
+}
+.anxiety .main-message {
+  background-image: url("");
+}
+.social-isolation .main-message {
+  background-image: url("");
+}
+.ocd .main-message {
+  background-image: url("");
+}
+.resources .main-message {
+  background-image: url("");
 }
 
-/* TODO: Replace the current image URL with your own */
-.image-one {
-  background-image: url("https://cdn.glitch.com/1106b84b-faac-4284-9a1b-283471629614%2FHappy%20Sad%20GWC.jpeg?v=1594943623435");
+
+/* TODO: Replace the current image URL with your own.  This is the second image on your page. */
+
+.home .image-one {
+  background-image: url("");
+}
+.anxiety .image-one {
+  background-image: url("");
+}
+.social-isolation .image-one {
+  background-image: url("");
+}
+.ocd .image-one {
+  background-image: url("");
+}
+.resources .image-one {
+  background-image: url("");
 }
 
 
-
-.home-main-message,
+.main-message,
 .image-one,
 image-two {
   position: relative;
@@ -246,11 +261,24 @@ image-two {
   background-attachment: fixed;
 }
 
-.image-two {
-  background-image: url("https://cdn.glitch.com/1106b84b-faac-4284-9a1b-283471629614%2FDespair%20GWC.jpeg?v=1594943614278");
+/* TODO: Replace the current image URL with your own.  This is the third image on your page. */
+.home .image-two {
+  background-image: url("");
+}
+.anxiety .image-two {
+  background-image: url("");
+}
+.social-isolation .image-two {
+  background-image: url("");
+}
+.ocd .image-two {
+  background-image: url("");
+}
+.resources .image-two {
+  background-image: url("");
 }
 
-.home-main-message,
+.main-message,
 .image-one,
 .image-two,
 image-three {
@@ -263,11 +291,24 @@ image-three {
   background-attachment: fixed;
 }
 
-.image-three {
-  background-image: url("https://cdn.glitch.com/1106b84b-faac-4284-9a1b-283471629614%2FGWC%20Project.jpeg?v=1594944087881");
+/* TODO: Replace the current image URL with your own.  This is the fourth image on your page. */
+.home .image-three {
+  background-image: url("");
+}
+.anxiety .image-three {
+  background-image: url("");
+}
+.social-isolation .image-three {
+  background-image: url("");
+}
+.ocd .image-three {
+  background-image: url("");
+}
+.resources .image-three {
+  background-image: url("");
 }
 
-.home-main-message,
+.main-message,
 .image-one,
 .image-two,
 .image-three,
@@ -280,9 +321,22 @@ image-four {
   min-height: 100%;
   background-attachment: fixed;
 }
- 
-.image-four {
-  background-image: url("https://cdn.glitch.com/1106b84b-faac-4284-9a1b-283471629614%2FGWC%20Project.jpeg?v=1594944087881");
+
+/* TODO: Replace the current image URL with your own.  This is the fifth image on your page. */
+.home .image-four {
+  background-image: url("");
+}
+.anxiety .image-four {
+  background-image: url("");
+}
+.social-isolation .image-four {
+  background-image: url("");
+}
+.ocd .image-four {
+  background-image: url("");
+}
+.resources .image-four {
+  background-image: url("");
 }
 
 /* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
