@@ -1,0 +1,19 @@
+For the "Anxiety" page
+
+the first photo is located here: https://pixabay.com/illustrations/question-unknown-unfamiliar-1301144/  (this photo already shows credit on the website)
+the second: https://pixabay.com/photos/fear-hug-voltage-anxiety-panic-2012536/
+the third: https://pixabay.com/photos/stress-anxiety-depression-unhappy-2902537/
+and the forth: https://pixabay.com/photos/nature-dandelion-macro-close-up-3092555/
+on the style.css, there is an image 4 section, so I used this just in case: https://pixabay.com/illustrations/background-abstract-christmas-shiny-3017167/
+
+For the "OCD" page 
+
+the first photo: https://pixabay.com/photos/rose-flower-dew-dewdrops-droplets-165819/ (this ip also shows credit on website)
+the second photo: https://pixabay.com/photos/bath-towels-cotton-pile-folded-5849999/
+the third: https://pixabay.com/photos/hand-washing-soap-wash-hygiene-4818792/
+the forth: https://pixabay.com/photos/butterfly-blue-forest-fantasy-2049567/
+and like the anxiety page the other photo: https://pixabay.com/illustrations/ink-background-swirl-blue-purple-2229457/
+
+I do not know if the forth photos are necessary, so if not, scratch them.
+
+Have a great rest of the semester everyone! Hopefully I can join back soon and I cannot wait to see the finished result! :)   

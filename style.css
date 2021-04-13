@@ -20,8 +20,8 @@ html {
   font-family: "Roboto", sans-serif; /* Change the font */
   line-height: 1.5em; /* Change the line height size*/
   margin: 0em;
-  color: white; /* Change the font color*/
-  background-color: #bfbfbf; /* Change the background color */
+  color: #020e4f; /* Change the font color*/
+  background-color: #0D38D3; /* Change the background color */
   box-sizing: border-box;
 }
 
@@ -30,33 +30,32 @@ h1 {
   font-size: 50px;
   /*TODO: Change the font-family property to your linked font*/
   font-family: "Roboto Mono", sans-serif;
-  color: #000000;
+  color: white;
   text-align: center;
 }
 
 /*TODO: Change the font-family property to your linked font*/
 h2 {
-  letter-spacing: 3px;
-  font-size: 25px;
+  letter-spacing: 4px;
+  font-size: 35px;
   font-family: "Roboto Mono", sans-serif;
-  color: #43d6b9ff;
+  color: #0c1d78;
   text-align: center;
   line-height: 1.3em;
 }
 
 h3 {
-  letter-spacing: 3px;
-  font-size: 17px;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff;
+  letter-spacing: 0px;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #0c1d78;
   text-align: left;
   line-height: 1.3em;
 }
 
-
 /*TODO: Change the color of a link when a person hovers over it*/
 p a {
-  color: #43d6b9ff;
+  color: #0A44D5;
   text-decoration: none;
 }
 
@@ -74,9 +73,7 @@ ul.nav-bar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #bfbfbf;
-  border-style: solid;
-  border-color: #000000;
+  background-color: #0A44D5;
 }
 
 /* TODO (optional): Change the font size*/
@@ -92,7 +89,7 @@ li.nav {
 li.nav a {
   /* Styling for the <a> elements in <li class="nav"> */
   display: block;
-  color: #000000;
+  color: #bda8ff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -104,8 +101,8 @@ li.nav a {
 
 li.nav a:hover {
   /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
-  background-color: #00000060;
-  color: #000000;
+  background-color: #200085;
+  color: #ff4599;
 }
 
 /************************************************/
@@ -121,7 +118,7 @@ li.nav a:hover {
   align-items: center; /* Align the flex items to the center */
 
   /* Design properties */
-  background-color: #000000;
+  background-color: #0D38D3;
   padding: 5px;
 
   /* Positioning properties */
@@ -134,26 +131,26 @@ li.nav a:hover {
   /*border-style: dotted;*/
 }
 
-/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+/* TODO: Review the CSS properties to the flex item for the heading (the left box)note this is where to change the color of title of page words */
 .heading {
-  padding: 2%;
-  color: #43d6b9ff;
+  padding: 4%;
+  color: #A7B6F1; /* note this is where to change the color of title of page words */
   font-size: 50px;
-  letter-spacing: 10px;
-  line-height: 60px;
+  letter-spacing: 7px;
+  line-height: 50px;
   text-align: center;
 
   /*Debugging Tip: Uncomment the line below to see the outline of the container*/
   /*border-style: dotted;*/
 }
 
-/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box)*/
 .intro-text {
-  background-color: #43d6b9ff; /* Add your own background color */
-  padding: 4%;
-  margin: 3%;
-  color: #000000; /* Add the color of your font */
-  font-size: 20px; /* Add your font size*/
+  background-color: #A7B6F1; /* Add your own background color */
+  padding: 5%;
+  margin: 2%;
+  color: #0D38D3; /* Add the color of your font */
+  font-size: 30px; /* Add your font size*/
   letter-spacing: 2px; /* Adds space between letters */
   line-height: 1.4em; /* Adds space between lines */
   text-align: center;
@@ -161,7 +158,25 @@ li.nav a:hover {
   /*Debugging Tip: Uncomment the line below to see the outline of the container*/
   /*border-style: dotted;*/
 }
+.app {
+  padding: 3%;
+  margin: 3%;
+  align-items: right; /* Align the flex items to the center */
+  display: flex;
+}
 
+.aside {
+  width: 60%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #0c1d78;
+  line-height: 1.9em;
+  background-color: #A7B6F1;
+  border-style: double;
+}
 /************************************************/
 /*************** PARALLAX SCROLL ****************/
 /************************************************/
@@ -171,7 +186,7 @@ li.nav a:hover {
 /* TODO (optional): Change the background color and/or text alignment */
 
 .text-section {
-  background-color: #000000;
+  background-color: #A7B6F1; /* Add your own background color (currently the black box section) */
   padding: 20px 45px;
   margin: 35px;
   text-align: center;
@@ -183,79 +198,81 @@ li.nav a:hover {
 
 .attributions {
   position: absolute;
-  font-size:12px;
-  padding: 5px;
-  text-align: right;
-  right: 10px;
-  bottom: 10px;
-  background-color: rgb(119 112 112 / 78%);
+  bottom: 8px;
+  right: 16px;
+  font-size: 12px;
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
 }
 
-@media screen and (max-width; 700px){
+@media screen and (max-width; 700px) {
   .flexcontainer {
     flex-wrap: wrap;
-    top: 20%
+    top: 20%;
   }
 }
-
+.source-tag {
+  position: center;
+  font-size: 15px;
+  color: #0c1d78;
+  font-family: "Roboto Mono", sans-serif;
+}
 
 .main-message,
 .image-one {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #A7B6F1;
   background-size: cover;
   min-height: 100%; /* This adjusts the height of the image */
 
-  /* TODO: Add the property to create the parallax scrolling effect here */
-background-attachment: fixed;  
+  /* Property to create the parallax scrolling effect here */
+  background-attachment: fixed;
 }
 
 /* TODO: Replace the current image URL with your own. This is the first image on your page. */
 .home .main-message {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fcranium-3244122_640.png?v=1611077986951");
 }
 .anxiety .main-message {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fquestion-1301144_1920.png?v=1615330846225");
 }
 .social-isolation .main-message {
   background-image: url("");
 }
 .ocd .main-message {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Frose-165819_1280.jpg?v=1615328950763");
 }
 .resources .main-message {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fdesperate-2293377_1920.jpg?v=1615929644599");
 }
-
 
 /* TODO: Replace the current image URL with your own.  This is the second image on your page. */
 
 .home .image-one {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fmental-health-2019924_1280.jpg?v=1610491065774");
 }
 .anxiety .image-one {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Ffear-2012536_1280.jpg?v=1615331157476");
 }
 .social-isolation .image-one {
   background-image: url("");
 }
 .ocd .image-one {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fbath-towels-5849999_1920.jpg?v=1615331383777");
 }
 .resources .image-one {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fgirl-1822702_1920.jpg?v=1615929659413");
 }
-
 
 .main-message,
 .image-one,
-image-two {
+.image-two {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #A7B6F1;
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
@@ -263,19 +280,19 @@ image-two {
 
 /* TODO: Replace the current image URL with your own.  This is the third image on your page. */
 .home .image-two {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fsmiley-2979107_640%20(1).jpg?v=1611112144157");
 }
 .anxiety .image-two {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fstress-2902537_1920.jpg?v=1615331024633");
 }
 .social-isolation .image-two {
   background-image: url("");
 }
 .ocd .image-two {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fhand-washing-4818792_1920.jpg?v=1615329152186");
 }
 .resources .image-two {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fdog-1031058_1920.jpg?v=1615330232243");
 }
 
 .main-message,
@@ -285,7 +302,7 @@ image-three {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #A7B6F1;
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
@@ -293,19 +310,19 @@ image-three {
 
 /* TODO: Replace the current image URL with your own.  This is the fourth image on your page. */
 .home .image-three {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fsad-505857_640%20(1).jpg?v=1611183219804");
 }
 .anxiety .image-three {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fnature-3092555_1920.jpg?v=1615331295987");
 }
 .social-isolation .image-three {
   background-image: url("");
 }
 .ocd .image-three {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fbutterfly-2049567_1920.jpg?v=1615331452601");
 }
 .resources .image-three {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fyoga-2176668_1920.jpg?v=1615929676585");
 }
 
 .main-message,
@@ -316,7 +333,7 @@ image-four {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: #A7B6F1;
   background-size: cover;
   min-height: 100%;
   background-attachment: fixed;
@@ -327,21 +344,19 @@ image-four {
   background-image: url("");
 }
 .anxiety .image-four {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fbackground-3017167_1920.jpg?v=1615331704889");
 }
 .social-isolation .image-four {
   background-image: url("");
 }
 .ocd .image-four {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fink-2229457_1920.jpg?v=1615834593759");
 }
 .resources .image-four {
   background-image: url("");
 }
 
-/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
-
-/* TODO: Add more background images by repeating the process above */
+/* TODO: If needed, Add more background images by repeating the process above */
 
 /*-----------IMAGE ATTRIBUTIONS (if required)-----------
 .attributions {
@@ -359,5 +374,4 @@ image-four {
 
 /* TODO: Add a breakpoint if the screen is 700px or less */
 
-
-/* TODO: Add additional breakpoints based on your website's design
+/* TODO: Add additional breakpoints based on your website's design*/
