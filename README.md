@@ -1,4 +1,4 @@
-# Mental Health for Teens
+# Teen Mental Health
 
 This is a Girls Who Code Slover Library project to provide teens with strategies for dealing with mental health issues,
 and to provide links to resources for assistance.
