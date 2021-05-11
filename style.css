@@ -128,8 +128,8 @@ li.nav a:hover {
 
   /* Positioning properties */
   position: absolute;
-  left: 30%;
-  right: 30%;
+  left: 20%;
+  right: 20%;
   top: 30%; /* Change this value to move the box up or down */
   
   
