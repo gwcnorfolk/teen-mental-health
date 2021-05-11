@@ -69,6 +69,10 @@ p a {
 
 ul.nav-bar {
   /* Styling for the <ul class="nav-bar"> element */
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -88,7 +92,7 @@ li.nav {
 
 li.nav a {
   /* Styling for the <a> elements in <li class="nav"> */
-  display: block;
+  display: flex;
   color: #bda8ff;
   text-align: center;
   padding: 14px 16px;
@@ -113,19 +117,22 @@ li.nav a:hover {
 .flex-container {
   display: flex; /* Set the flexbox display */
   flex-direction: row; /* Configure the flex items to row */
-  flex-wrap: nowrap; /* Donâ€™t wrap the flex items */
+  flex-wrap: no-wrap; /* Do not wrap the flex items */
   justify-content: center; /* Justify the flex items to the center */
   align-items: center; /* Align the flex items to the center */
 
   /* Design properties */
   background-color: #0D38D3;
   padding: 5px;
+  
 
   /* Positioning properties */
   position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 40%; /* Change this value to move the box up or down */
+  left: 30%;
+  right: 30%;
+  top: 30%; /* Change this value to move the box up or down */
+  
+  
 
   /*Debugging Tip: Uncomment the line below to see the outline of the container*/
   /*border-style: dotted;*/
@@ -158,25 +165,38 @@ li.nav a:hover {
   /*Debugging Tip: Uncomment the line below to see the outline of the container*/
   /*border-style: dotted;*/
 }
+
 .app {
+  display: flex;
   padding: 3%;
   margin: 3%;
-  align-items: right; /* Align the flex items to the center */
-  display: flex;
+  align-self: center; /* Align the flex items to the center */
+  background-color: #A7B6F1;
+  border-style: double;
+  
 }
 
 .aside {
-  width: 60%;
-  padding-left: 15px;
+  width: 50%;
+  display: flex;
+  flex-wrap: no-wrap;
+  padding: 15px;
   margin-left: 15px;
-  float: left;
+  align-self: center;
   font-size: 25px;
   font-family: "Roboto Mono", sans-serif;
   color: #0c1d78;
-  line-height: 1.9em;
   background-color: #A7B6F1;
   border-style: double;
+  line-height: 1.9em;
+  
 }
+
+.aside h3 {
+  font-size: .95rem;
+  line-height: 1.5rem;
+}
+
 /************************************************/
 /*************** PARALLAX SCROLL ****************/
 /************************************************/
@@ -185,9 +205,20 @@ li.nav a:hover {
 
 /* TODO (optional): Change the background color and/or text alignment */
 
-.text-section {
+.app-section {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: center
   background-color: #A7B6F1; /* Add your own background color (currently the black box section) */
-  padding: 20px 45px;
+  padding: 2rem 4.5rem; /* 20px 45px */
+  margin: 0;
+  text-align: center;
+}
+
+.text-section {
+  display: block;
+  background-color: #A7B6F1; /* Add your own background color (currently the black box section) */
+  padding: 2rem 4.5rem; /* 20px 45px */
   margin: 35px;
   text-align: center;
 }
@@ -205,12 +236,92 @@ li.nav a:hover {
   font-family: "Roboto Mono", sans-serif;
 }
 
-@media screen and (max-width; 700px) {
-  .flexcontainer {
+@media screen and (max-width: 1286px) and (min-width: 601px) {
+  div.flexcontainer {
+    flex-wrap: wrap;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    
+  }
+  
+  div.aside {
+    width: 100%;
+  }
+  
+  div.app {
+    display: flex;
+    width: 100%;
+    align-self: center;
+  }
+  
+  div.app-section {
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .intro-text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  div.flexcontainer {
     flex-wrap: wrap;
     top: 20%;
+    left: 5%;
+    right: 5%;    
+  }
+  
+  div.aside {
+    width: 100%;
+  }
+  
+  div.app {
+    display: flex;
+    width: 100%;
+    align-self: center;
+  }
+  
+  div.app-section {
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  
+  ul.nav-bar {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column-reverse;
+  }
+  
+  .text-section h3 {
+    font-size: .85rem;
+    line-height: 1.5rem;
+    padding: 0;
+  }
+  
+  .app-section h3 {
+    font-size: .85rem;
+    line-height: 1.5rem;
+    padding: 0;
   }
 }
+
+
 .source-tag {
   position: center;
   font-size: 15px;
@@ -218,7 +329,23 @@ li.nav a:hover {
   font-family: "Roboto Mono", sans-serif;
 }
 
-.main-message,
+.main-message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #A7B6F1;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* Property to create the parallax scrolling effect here */
+  background-attachment: fixed;
+}
+
 .image-one {
   position: relative;
   background-position: center;
@@ -316,7 +443,7 @@ image-three {
   background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fnature-3092555_1920.jpg?v=1615331295987");
 }
 .social-isolation .image-three {
-  background-image: url("");
+  background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fpeople-3104635_1920.jpg?v=1620215231881");
 }
 .ocd .image-three {
   background-image: url("https://cdn.glitch.com/c572d657-e3bf-4b2d-8a3d-b710e9e6082b%2Fbutterfly-2049567_1920.jpg?v=1615331452601");
