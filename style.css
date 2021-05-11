@@ -329,23 +329,7 @@ li.nav a:hover {
   font-family: "Roboto Mono", sans-serif;
 }
 
-.main-message {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #A7B6F1;
-  background-size: cover;
-  min-height: 100%; /* This adjusts the height of the image */
-
-  /* Property to create the parallax scrolling effect here */
-  background-attachment: fixed;
-}
-
+.main-message,
 .image-one {
   position: relative;
   background-position: center;
