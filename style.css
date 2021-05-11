@@ -236,10 +236,10 @@ li.nav a:hover {
   font-family: "Roboto Mono", sans-serif;
 }
 
-@media screen and (max-width: 1286px) and (min-width: 601px) {
+@media screen and ((max-width: 1286px) and (min-width: 601px)) {
   div.flexcontainer {
     flex-wrap: wrap;
-    top: 30%;
+    top: 20%;
     left: 10%;
     right: 10%;
     
@@ -257,6 +257,7 @@ li.nav a:hover {
   
   div.app-section {
     flex-wrap: wrap;
+    padding: 1rem 1rem;
   }
   
   .heading {
